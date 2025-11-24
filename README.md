@@ -3,7 +3,8 @@ Fundamental Research &amp; Evolutionary X-Systems (FREX) - Building the foundati
 markdown
 # FREX - Fundamental Research & Evolutionary X-Systems
 
-![FREX Logo](https://via.placeholder.com/150x150/22d3ee/000000?text=FREX)
+![![17640212696992251685467930134266](https://github.com/user-attachments/assets/b7e6201c-bd33-4cd6-9160-998bb20a7346)
+ Logo](https://via.placeholder.com/150x150/22d3ee/000000?text=FREX)
 
 > Building the foundational layer for tomorrow through quantum computing, doctrinal systems, and emergent technologies.
 
