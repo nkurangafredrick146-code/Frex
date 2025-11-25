@@ -1,0 +1,48 @@
+/* Tailwind setup */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root color variables */
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+/* Body background */
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Frex animated background */
+.frex-animation {
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(56, 189, 248, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(34, 211, 238, 0.1) 0%, transparent 50%),
+    radial-gradient(circle, rgba(0, 255, 255, 0.2), transparent);
+  animation: pulse 6s ease-in-out infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+    }
