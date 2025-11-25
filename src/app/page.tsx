@@ -1,18 +1,20 @@
-// Example in Next.js with Tailwind CSS
-export default function Home() {
+  export default function Home() {
   return (
-    <section className="min-h-screen bg-black text-white flex items-center justify-center px-4">
+    <section className="min-h-screen bg-black text-white flex items-center justify-center px-4 relative">
       <div className="text-center max-w-4xl mx-auto">
+        {/* Frex Logo */}
+        <img src="/frex-logo.svg" alt="Frex Logo" className="mx-auto mb-6 w-24 h-24" />
+
         {/* Main Headline */}
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
           Building the Foundational Layer for Tomorrow
         </h1>
-        
+
         {/* Sub-headline */}
         <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
           Frex converges cutting-edge software, quantum computing, and doctrinal research to engineer the core systems on which our future will be built.
         </p>
-        
+
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a 
@@ -28,12 +30,17 @@ export default function Home() {
             Partner with Frex Solutions
           </a>
         </div>
+
+        {/* Scroll Prompt */}
+        <a href="#about" className="mt-12 block text-cyan-400 hover:underline text-lg">
+          Learn more about Frex ↓
+        </a>
       </div>
-      
+
       {/* Animated background element */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="frex-animation"></div>
       </div>
     </section>
   );
-}
+  }
